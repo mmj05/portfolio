@@ -1,3 +1,8 @@
+// Import project images
+import libraryStoreImg from '../assets/projects/library-store/library-store.png';
+import jammingImg from '../assets/projects/jamming/jamming.png';
+import recipeAppImg from '../assets/projects/recipe-app/recipe-app.png';
+
 export const projects = [
   {
     id: 1,
@@ -26,7 +31,7 @@ export const projects = [
     ],
     liveUrl: "https://library-app-pearl.vercel.app/home",
     githubUrl: "https://github.com/mmj05",
-    image: "/love-to-read.png",
+    image: libraryStoreImg,
     screenshots: [
       {
         id: 1,
@@ -60,7 +65,7 @@ export const projects = [
     technologies: ["React", "JavaScript", "Spotify API", "CSS3", "HTML5"],
     liveUrl: "https://jamming-mamming.netlify.app/",
     githubUrl: "https://github.com/mmj05/jamming",
-    image: "/jamming.png",
+    image: jammingImg,
     screenshots: [
       {
         id: 1,
@@ -90,7 +95,7 @@ export const projects = [
     technologies: ["jQuery", "JavaScript", "HTML5", "CSS3", "REST APIs"],
     liveUrl: "https://mmj05.github.io/recipe-search-app/",
     githubUrl: "https://github.com/mmj05/recipe-search-app",
-    image: "/recipe-app.png",
+    image: recipeAppImg,
     screenshots: [
       { id: 1, type: "desktop", description: "Recipe search homepage" },
       {
