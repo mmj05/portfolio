@@ -14,10 +14,7 @@ const HomePage = ({
   scrollToSection, 
   isMenuOpen, 
   setIsMenuOpen, 
-  scrolled, 
-  formData, 
-  handleFormSubmit, 
-  handleInputChange 
+  scrolled
 }) => {
   return (
     <div className="homepage">
@@ -37,11 +34,7 @@ const HomePage = ({
       
       <SkillsSection skills={skills} />
       
-      <ContactSection 
-        formData={formData}
-        handleFormSubmit={handleFormSubmit}
-        handleInputChange={handleInputChange}
-      />
+      <ContactSection />
       
       <Footer />
     </div>
