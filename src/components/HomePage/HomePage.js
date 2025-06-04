@@ -3,6 +3,7 @@ import Navigation from '../Navigation/Navigation';
 import HeroSection from '../HeroSection/HeroSection';
 import ProjectsSection from '../ProjectsSection/ProjectsSection';
 import SkillsSection from '../SkillsSection/SkillsSection';
+import AboutSection from '../AboutSection/AboutSection';
 import ContactSection from '../ContactSection/ContactSection';
 import Footer from '../Footer/Footer';
 import './HomePage.css';
@@ -33,6 +34,8 @@ const HomePage = ({
       />
       
       <SkillsSection skills={skills} />
+      
+      <AboutSection />
       
       <ContactSection />
       
