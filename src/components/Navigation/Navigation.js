@@ -14,6 +14,7 @@ const Navigation = ({ scrollToSection, scrolled, isMenuOpen, setIsMenuOpen }) =>
           <button onClick={() => scrollToSection('hero')} className="nav-link">Home</button>
           <button onClick={() => scrollToSection('projects')} className="nav-link">Projects</button>
           <button onClick={() => scrollToSection('skills')} className="nav-link">Skills</button>
+          <button onClick={() => scrollToSection('about')} className="nav-link">About</button>
           <button onClick={() => scrollToSection('contact')} className="nav-link">Contact</button>
           <div className="social-links">
             <a href="mailto:muhaimin.jobayer@gmail.com" className="social-link">
