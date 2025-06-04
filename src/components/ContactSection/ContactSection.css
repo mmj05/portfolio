@@ -88,7 +88,43 @@
   min-height: 120px;
 }
 
+/* Formspree validation error styles */
+.form-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0 0;
+}
+
+.form-group ul li {
+  color: #ff6b6b;
+  font-size: 14px;
+  font-weight: 500;
+  background: rgba(255, 107, 107, 0.1);
+  padding: 8px 12px;
+  border-radius: var(--border-radius-sm);
+  border-left: 3px solid #ff6b6b;
+  margin-top: 4px;
+}
+
+.form-group input.error,
+.form-group textarea.error {
+  border-color: #ff6b6b;
+  background: rgba(255, 107, 107, 0.05);
+}
+
 .submit-btn {
   width: 100%;
   margin-top: 10px;
+  transition: var(--transition);
+}
+
+.submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.submit-btn:disabled:hover {
+  transform: none;
+  box-shadow: none;
 } 
