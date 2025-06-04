@@ -46,7 +46,7 @@ const ProjectPage = ({ project, navigateToHome, scrolled, isMenuOpen, setIsMenuO
         </div>
       </nav>
 
-      <div className="project-content">
+      <div className="project-content-container">
         {/* Back Button */}
         <button
           onClick={navigateToHome}

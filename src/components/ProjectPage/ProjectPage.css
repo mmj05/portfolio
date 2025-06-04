@@ -34,10 +34,10 @@
   background-clip: text;
 }
 
-.project-content {
+.project-content-container {
   max-width: 1000px;
   margin: 0 auto;
-  padding: 120px 20px 0;
+  padding: 100px 20px 0;
 }
 
 .back-button {
