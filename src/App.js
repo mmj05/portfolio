@@ -14,11 +14,6 @@ const PortfolioWebsite = () => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
 
   useEffect(() => {
     const timer = setTimeout(() => setIsLoading(false), 1500);
@@ -59,20 +54,6 @@ const PortfolioWebsite = () => {
       element.scrollIntoView({ behavior: 'smooth' });
     }
     setIsMenuOpen(false);
-  };
-
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    alert('Thank you for your message! I\'ll get back to you soon.');
-    setFormData({ name: '', email: '', message: '' });
-  };
-
-  const handleInputChange = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: e.target.value
-    });
   };
 
   if (isLoading) {
@@ -127,9 +108,6 @@ const PortfolioWebsite = () => {
           isMenuOpen={isMenuOpen}
           setIsMenuOpen={setIsMenuOpen}
           scrolled={scrolled}
-          formData={formData}
-          handleFormSubmit={handleFormSubmit}
-          handleInputChange={handleInputChange}
         />
       ) : (
         <ProjectPage
