@@ -15,6 +15,7 @@ const MobileMenu = ({ isMenuOpen, setIsMenuOpen, scrollToSection }) => {
         <button onClick={() => scrollToSection('hero')} className="mobile-nav-link">Home</button>
         <button onClick={() => scrollToSection('projects')} className="mobile-nav-link">Projects</button>
         <button onClick={() => scrollToSection('skills')} className="mobile-nav-link">Skills</button>
+        <button onClick={() => scrollToSection('about')} className="mobile-nav-link">About</button>
         <button onClick={() => scrollToSection('contact')} className="mobile-nav-link">Contact</button>
       </nav>
     </div>
