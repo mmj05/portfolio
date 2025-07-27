@@ -13,15 +13,18 @@
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
   justify-items: center;
+  align-items: start;
 }
 
 @media (max-width: 768px) {
   .projects-grid {
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 25px;
+    max-width: 400px;
+    margin: 0 auto;
   }
   
   .section-title {
@@ -36,6 +39,11 @@
   }
   
   .projects-grid {
-    gap: 25px;
+    gap: 20px;
+    max-width: 350px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
   }
 } 
