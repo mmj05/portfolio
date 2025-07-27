@@ -90,21 +90,38 @@ const ProjectPage = ({ project, navigateToHome, scrolled, isMenuOpen, setIsMenuO
           </div>
         </div>
 
+        {/* Challenges Section */}
+        {project.challenges && (
+          <div className="challenges-section">
+            <h2 className="section-subtitle">
+              <span className="gradient-text">Challenges</span> & Problem Solving
+            </h2>
+            <div className="challenge-solution-content glass-card">
+              <div className="challenge-part">
+                <h3 className="subsection-title">The Challenge</h3>
+                <p className="challenge-text">{project.challenges}</p>
+              </div>
+              {project.solution && (
+                <div className="solution-part">
+                  <h3 className="subsection-title">The Solution</h3>
+                  <p className="solution-text">{project.solution}</p>
+                </div>
+              )}
+            </div>
+          </div>
+        )}
+
         {/* Features Section */}
         <div className="features-section">
           <h2 className="section-subtitle">
             Key <span className="gradient-text">Features</span>
           </h2>
           
-          <div className="features-grid">
+          <div className="features-list">
             {project.features.map((feature, index) => (
-              <div key={index} className="feature-item glass-card">
-                <div className="feature-icon">
-                  <CheckCircle size={24} color="#64ffda" />
-                </div>
-                <p className="feature-text">
-                  {feature}
-                </p>
+              <div key={index} className="feature-item-compact">
+                <CheckCircle size={16} color="#64ffda" className="feature-check" />
+                <span className="feature-text-compact">{feature}</span>
               </div>
             ))}
           </div>
