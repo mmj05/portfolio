@@ -48,18 +48,50 @@ const ProjectCard = ({ project, onClick }) => {
               rel="noopener noreferrer"
               className="project-link"
               onClick={(e) => e.stopPropagation()}
+              title="View Live Site"
             >
               <ExternalLink size={18} className="project-link-icon" />
             </a>
-            <a 
-              href={project.githubUrl} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="project-link"
-              onClick={(e) => e.stopPropagation()}
-            >
-              <Github size={18} className="project-link-icon" />
-            </a>
+            
+            {/* Handle multiple GitHub repositories */}
+            {project.githubUrls ? (
+              <>
+                <a 
+                  href={project.githubUrls.frontend} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="project-link github-frontend"
+                  onClick={(e) => e.stopPropagation()}
+                  title="Frontend Repository"
+                >
+                  <Github size={18} className="project-link-icon" />
+                  <span className="repo-label">FE</span>
+                </a>
+                <a 
+                  href={project.githubUrls.backend} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="project-link github-backend"
+                  onClick={(e) => e.stopPropagation()}
+                  title="Backend Repository"
+                >
+                  <Github size={18} className="project-link-icon" />
+                  <span className="repo-label">BE</span>
+                </a>
+              </>
+            ) : (
+              /* Single GitHub repository */
+              <a 
+                href={project.githubUrl} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="project-link"
+                onClick={(e) => e.stopPropagation()}
+                title="GitHub Repository"
+              >
+                <Github size={18} className="project-link-icon" />
+              </a>
+            )}
           </div>
         </div>
       </div>
