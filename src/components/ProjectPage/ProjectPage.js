@@ -75,10 +75,25 @@ const ProjectPage = ({ project, navigateToHome, scrolled, isMenuOpen, setIsMenuO
               <ExternalLink size={18} />
               Live Demo
             </a>
-            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">
-              <Github size={18} />
-              Source Code
-            </a>
+            
+            {/* Handle multiple GitHub repositories */}
+            {project.githubUrls ? (
+              <>
+                <a href={project.githubUrls.frontend} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                  <Github size={18} />
+                  Frontend Code
+                </a>
+                <a href={project.githubUrls.backend} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                  <Github size={18} />
+                  Backend Code
+                </a>
+              </>
+            ) : (
+              <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary">
+                <Github size={18} />
+                Source Code
+              </a>
+            )}
           </div>
 
           <div className="project-tech-list">
@@ -136,15 +151,20 @@ const ProjectPage = ({ project, navigateToHome, scrolled, isMenuOpen, setIsMenuO
           <div className="screenshot-grid">
             {project.screenshots.map((screenshot) => (
               <div key={screenshot.id} className="screenshot-item">
-                <div className="device-icon">
-                  {getDeviceIcon(screenshot.type)}
+                <div className="screenshot-header">
+                  <p className="screenshot-description">
+                    {screenshot.description}
+                  </p>
                 </div>
-                <h4 className="screenshot-title">
-                  {screenshot.type.charAt(0).toUpperCase() + screenshot.type.slice(1)} View
-                </h4>
-                <p className="screenshot-description">
-                  {screenshot.description}
-                </p>
+                {screenshot.image && (
+                  <div className="screenshot-image-container">
+                    <img 
+                      src={screenshot.image} 
+                      alt={screenshot.description}
+                      className="screenshot-image"
+                    />
+                  </div>
+                )}
               </div>
             ))}
           </div>
