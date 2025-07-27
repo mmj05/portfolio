@@ -1,8 +1,18 @@
 // Import project images
-import flipdotImg from '../assets/projects/flipdot/flipdot.png';
-import libraryStoreImg from '../assets/projects/library-store/library-store.png';
-import jammingImg from '../assets/projects/jamming/jamming.png';
-import recipeAppImg from '../assets/projects/recipe-app/recipe-app.png';
+import flipdotImg from "../assets/projects/flipdot/flipdot.png";
+import libraryStoreImg from "../assets/projects/library-store/library-store.png";
+import jammingImg from "../assets/projects/jamming/jamming.png";
+import recipeAppImg from "../assets/projects/recipe-app/recipe-app.png";
+
+// Import FlipDot screenshots
+import flipdotHomepage from "../assets/projects/flipdot/homepage.png";
+import flipdotProductCatalog from "../assets/projects/flipdot/product-catalog.png";
+import flipdotCheckout from "../assets/projects/flipdot/checkout.png";
+import flipdotOrderConfirmation from "../assets/projects/flipdot/order-confirmation.png";
+import flipdotSellerDashboardOverview from "../assets/projects/flipdot/seller-dashboard-overview.png";
+import flipdotSellerDashboardProducts from "../assets/projects/flipdot/seller-dashboard-products.png";
+import flipdotSellerDashboardOrders from "../assets/projects/flipdot/seller-dashboard-orders.png";
+import flipdotAdminDashboard from "../assets/projects/flipdot/admin-dashboard.png";
 
 export const projects = [
   {
@@ -27,35 +37,74 @@ export const projects = [
       "Frontend deployed on Render.com with CI/CD pipeline",
       "Dockerized backend deployment on Render cloud platform",
       "AWS Aurora PostgreSQL database for enterprise-grade data persistence",
-      "Full cloud infrastructure with scalable architecture"
+      "Full cloud infrastructure with scalable architecture",
     ],
     technologies: [
       "React",
-      "Redux Toolkit", 
+      "Redux Toolkit",
       "Spring Boot",
       "PostgreSQL",
       "Docker",
       "JWT Auth",
       "TailwindCSS",
       "Vite",
-      "REST APIs"
+      "REST APIs",
     ],
     liveUrl: "https://flipdot.onrender.com/",
     githubUrls: {
       frontend: "https://github.com/mmj05/ecommerce-frontend",
-      backend: "https://github.com/mmj05/ecommerce-backend"
+      backend: "https://github.com/mmj05/ecommerce-backend",
     },
     image: flipdotImg,
     screenshots: [
       {
         id: 1,
         type: "desktop",
+        image: flipdotHomepage,
         description: "Homepage showcasing featured products and categories",
       },
-      { id: 2, type: "desktop", description: "Product catalog with advanced filtering" },
-      { id: 3, type: "desktop", description: "Shopping cart and checkout process" },
-      { id: 4, type: "desktop", description: "Seller dashboard for order and product management" },
-      { id: 5, type: "desktop", description: "Admin panel for system management" },
+      {
+        id: 2,
+        type: "desktop",
+        image: flipdotProductCatalog,
+        description: "Product catalog with advanced filtering",
+      },
+      {
+        id: 3,
+        type: "desktop",
+        image: flipdotCheckout,
+        description: "Shopping cart and checkout process",
+      },
+      {
+        id: 4,
+        type: "desktop",
+        image: flipdotOrderConfirmation,
+        description: "Order confirmation page",
+      },
+      {
+        id: 5,
+        type: "desktop",
+        image: flipdotSellerDashboardOverview,
+        description: "Seller dashboard overview",
+      },
+      {
+        id: 6,
+        type: "desktop",
+        image: flipdotSellerDashboardProducts,
+        description: "Seller dashboard for product management",
+      },
+      {
+        id: 7,
+        type: "desktop",
+        image: flipdotSellerDashboardOrders,
+        description: "Seller dashboard for order management",
+      },
+      {
+        id: 8,
+        type: "desktop",
+        image: flipdotAdminDashboard,
+        description: "Admin panel for system management",
+      },
     ],
     challenges:
       "Implementing a secure multi-role authentication system, managing complex state across different user types, and deploying a full-stack application with proper cloud infrastructure while ensuring scalability and security.",
@@ -83,7 +132,7 @@ export const projects = [
       "Real-time book availability tracking and status updates",
       "Advanced search and filtering capabilities",
       "Automated fee calculation for overdue books",
-      "Complete audit trail with checkout/return history"
+      "Complete audit trail with checkout/return history",
     ],
     technologies: [
       "React",
@@ -94,12 +143,12 @@ export const projects = [
       "JWT Auth",
       "Stripe API",
       "Docker",
-      "REST APIs"
+      "REST APIs",
     ],
     liveUrl: "https://love-to-read.onrender.com/home",
     githubUrls: {
       frontend: "https://github.com/mmj05/library-app-frontend",
-      backend: "https://github.com/mmj05/library-app-backend"
+      backend: "https://github.com/mmj05/library-app-backend",
     },
     image: libraryStoreImg,
     screenshots: [
@@ -108,15 +157,33 @@ export const projects = [
         type: "desktop",
         description: "Homepage showcasing featured books and library services",
       },
-      { id: 2, type: "desktop", description: "Book search and browsing interface with detailed information" },
-      { id: 3, type: "desktop", description: "User dashboard showing current loans and checkout history" },
+      {
+        id: 2,
+        type: "desktop",
+        description:
+          "Book search and browsing interface with detailed information",
+      },
+      {
+        id: 3,
+        type: "desktop",
+        description:
+          "User dashboard showing current loans and checkout history",
+      },
       {
         id: 4,
         type: "desktop",
         description: "Admin panel for book inventory and user management",
       },
-      { id: 5, type: "desktop", description: "Stripe-powered payment system for late fees" },
-      { id: 6, type: "desktop", description: "Messaging system for user-admin communication" },
+      {
+        id: 5,
+        type: "desktop",
+        description: "Stripe-powered payment system for late fees",
+      },
+      {
+        id: 6,
+        type: "desktop",
+        description: "Messaging system for user-admin communication",
+      },
     ],
     challenges:
       "Implementing a robust book checkout system with complex business rules for due dates, fees, and inventory management, while migrating from Okta to custom JWT authentication and integrating Stripe for payment processing.",
@@ -164,7 +231,7 @@ export const projects = [
       "Seamlessly melds data from two disparate APIs",
       "Comprehensive and diverse recipe library",
       "Detailed recipe instructions and ingredient lists",
-      "Responsive design for optimal mobile experience"
+      "Responsive design for optimal mobile experience",
     ],
     technologies: ["jQuery", "JavaScript", "HTML5", "CSS3", "REST APIs"],
     liveUrl: "https://mmj05.github.io/recipe-search-app/",
