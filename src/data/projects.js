@@ -13,6 +13,24 @@ import flipdotSellerDashboardOverview from "../assets/projects/flipdot/seller-da
 import flipdotSellerDashboardProducts from "../assets/projects/flipdot/seller-dashboard-products.png";
 import flipdotSellerDashboardOrders from "../assets/projects/flipdot/seller-dashboard-orders.png";
 import flipdotAdminDashboard from "../assets/projects/flipdot/admin-dashboard.png";
+import flipdotUserAccountManagement from "../assets/projects/flipdot/user-account-management.png";
+
+// Import Library Store screenshots
+import libraryStoreHomepage from "../assets/projects/library-store/homepage.png";
+import libraryStoreBookSearch from "../assets/projects/library-store/book-search.png";
+import libraryStoreUserCurrentLoans from "../assets/projects/library-store/user-current-loans.png";
+import libraryStoreUserDashboardHistory from "../assets/projects/library-store/user-dashboard-history.png";
+import libraryStoreAdminPanel from "../assets/projects/library-store/admin-panel.png";
+import libraryStoreAdminUserMessaging from "../assets/projects/library-store/admin-user-messaging.png";
+
+// Import Jamming screenshots
+import jammingHomepage from "../assets/projects/jamming/homepage.png";
+import jammingSearchResults from "../assets/projects/jamming/search-results.png";
+import jammingPlaylistCreation from "../assets/projects/jamming/playlist-creation.png";
+
+// Import Recipe App screenshots
+import recipeAppHomepage from "../assets/projects/recipe-app/homepage.png";
+import recipeAppSearchResults from "../assets/projects/recipe-app/search-results.png";
 
 export const projects = [
   {
@@ -105,6 +123,12 @@ export const projects = [
         image: flipdotAdminDashboard,
         description: "Admin panel for system management",
       },
+      {
+        id: 9,
+        type: "desktop",
+        image: flipdotUserAccountManagement,
+        description: "User account management and profile settings",
+      },
     ],
     challenges:
       "Implementing a secure multi-role authentication system, managing complex state across different user types, and deploying a full-stack application with proper cloud infrastructure while ensuring scalability and security.",
@@ -155,33 +179,39 @@ export const projects = [
       {
         id: 1,
         type: "desktop",
+        image: libraryStoreHomepage,
         description: "Homepage showcasing featured books and library services",
       },
       {
         id: 2,
         type: "desktop",
+        image: libraryStoreBookSearch,
         description:
           "Book search and browsing interface with detailed information",
       },
       {
         id: 3,
         type: "desktop",
+        image: libraryStoreUserCurrentLoans,
         description:
-          "User dashboard showing current loans and checkout history",
+          "User dashboard showing current loans and checkout status",
       },
       {
         id: 4,
         type: "desktop",
-        description: "Admin panel for book inventory and user management",
+        image: libraryStoreUserDashboardHistory,
+        description: "User dashboard displaying loan history",
       },
       {
         id: 5,
         type: "desktop",
-        description: "Stripe-powered payment system for late fees",
+        image: libraryStoreAdminPanel,
+        description: "Admin panel for book inventory management",
       },
       {
         id: 6,
         type: "desktop",
+        image: libraryStoreAdminUserMessaging,
         description: "Messaging system for user-admin communication",
       },
     ],
@@ -209,11 +239,21 @@ export const projects = [
       {
         id: 1,
         type: "desktop",
+        image: jammingHomepage,
         description: "Home page displaying search interface",
       },
-      { id: 2, type: "desktop", description: "Search results from Spotify" },
-      { id: 3, type: "desktop", description: "Playlist creation interface" },
-      { id: 4, type: "desktop", description: "Spotify authentication screen" },
+      { 
+        id: 2, 
+        type: "desktop", 
+        image: jammingSearchResults,
+        description: "Search results from Spotify" 
+      },
+      { 
+        id: 3, 
+        type: "desktop", 
+        image: jammingPlaylistCreation,
+        description: "Playlist creation interface" 
+      },
     ],
     challenges:
       "Handling asynchronous Spotify API calls while managing playlist state.",
@@ -238,22 +278,18 @@ export const projects = [
     githubUrl: "https://github.com/mmj05/recipe-search-app",
     image: recipeAppImg,
     screenshots: [
-      { id: 1, type: "desktop", description: "Recipe search homepage" },
+      { 
+        id: 1, 
+        type: "desktop", 
+        image: recipeAppHomepage,
+        description: "Recipe search homepage" 
+      },
       {
         id: 2,
         type: "desktop",
+        image: recipeAppSearchResults,
         description: "Search results based on user query",
-      },
-      {
-        id: 3,
-        type: "desktop",
-        description: "Recipe details page with ingredients and instructions",
-      },
-      {
-        id: 4,
-        type: "desktop",
-        description: "Responsive layout for different screen sizes",
-      },
+      }
     ],
     challenges:
       "Combining multiple APIs and presenting cohesive recipe results without duplication.",
