@@ -44,11 +44,11 @@
 }
 
 .hero-title {
-  font-size: 4.5rem;
+  font-size: 4.7rem;
   font-weight: 900;
   margin-bottom: var(--space-lg);
   line-height: 1.1;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.02em;
   background: linear-gradient(135deg, var(--text-primary) 0%, var(--primary-color) 50%, var(--secondary-color) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -67,7 +67,7 @@
 }
 
 .hero-description {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   margin-bottom: var(--space-2xl);
   color: var(--text-muted);
   line-height: 1.7;
@@ -78,8 +78,8 @@
 }
 
 .hero-cta {
-  margin-top: var(--space-xl);
-  display: flex;
+  margin: var(--space-xl) auto 0 auto;
+  display: inline-flex;
   gap: var(--space-lg);
   justify-content: center;
   align-items: center;
@@ -91,7 +91,6 @@
 .scroll-indicator {
   position: absolute;
   bottom: var(--space-2xl);
-  left: 50%;
   transform: translateX(-50%);
   display: flex;
   flex-direction: column;
