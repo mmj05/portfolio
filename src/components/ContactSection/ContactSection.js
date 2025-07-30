@@ -10,7 +10,7 @@ const ContactSection = () => {
     return (
       <section id="contact" className="contact-section">
         <h2 className="section-title">
-          Get In <span className="gradient-text">Touch</span>
+          Get In Touch
         </h2>
         <div className="contact-content">
           <div className="contact-info">
@@ -54,7 +54,7 @@ const ContactSection = () => {
   return (
     <section id="contact" className="contact-section">
       <h2 className="section-title">
-        Get In <span className="gradient-text">Touch</span>
+        Get In Touch
       </h2>
 
       <div className="contact-content">
