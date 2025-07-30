@@ -262,7 +262,7 @@
 }
 
 .section-subtitle {
-  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-size: clamp(1.75rem, 3vw, 1.9rem);
   font-weight: 800;
   margin-bottom: var(--space-xl);
   color: var(--text-primary);
