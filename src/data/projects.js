@@ -61,6 +61,7 @@ export const projects = [
       "React",
       "Redux Toolkit",
       "Spring Boot",
+      "Spring Security",
       "PostgreSQL",
       "Docker",
       "JWT Auth",
