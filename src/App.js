@@ -48,6 +48,18 @@ const PortfolioWebsite = () => {
     window.scrollTo(0, 0);
   };
 
+  const navigateToHomeProjects = () => {
+    setCurrentPage('home');
+    setSelectedProject(null);
+    // Use setTimeout to ensure the DOM is updated before scrolling
+    setTimeout(() => {
+      const element = document.getElementById('projects');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -112,7 +124,7 @@ const PortfolioWebsite = () => {
       ) : (
         <ProjectPage
           project={selectedProject}
-          navigateToHome={navigateToHome}
+          navigateToHome={navigateToHomeProjects}
           scrolled={scrolled}
           isMenuOpen={isMenuOpen}
           setIsMenuOpen={setIsMenuOpen}
