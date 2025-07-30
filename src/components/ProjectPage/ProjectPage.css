@@ -28,10 +28,7 @@
 .project-logo {
   font-size: 24px;
   font-weight: 700;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--primary-color);
 }
 
 .project-content-container {
@@ -147,7 +144,7 @@
 }
 
 .challenge-solution-content:hover {
-  border-color: rgba(100, 255, 218, 0.3);
+  border-color: rgba(255, 215, 0, 0.3);
   transform: translateY(-2px);
 }
 
@@ -196,16 +193,16 @@
 
 .screenshot-item:hover {
   transform: translateY(-5px);
-  border-color: rgba(100, 255, 218, 0.3);
-  box-shadow: 0 10px 30px rgba(100, 255, 218, 0.1);
+  border-color: rgba(255, 215, 0, 0.3);
+  box-shadow: 0 15px 35px rgba(255, 215, 0, 0.1);
 }
 
 .screenshot-header {
   padding: 25px 25px 20px 25px;
   text-align: center;
-  border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+  border-bottom: 1px solid rgba(255, 215, 0, 0.15);
   border-radius: var(--border-radius-md) var(--border-radius-md) 0 0;
-  background: linear-gradient(135deg, rgba(100, 255, 218, 0.02), rgba(178, 102, 255, 0.02));
+  background: rgba(255, 215, 0, 0.03);
 }
 
 .screenshot-description {
