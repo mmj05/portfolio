@@ -55,7 +55,15 @@ const PortfolioWebsite = () => {
     setTimeout(() => {
       const element = document.getElementById('projects');
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        // Calculate offset to account for fixed navigation bar
+        const navbar = document.querySelector('.navigation');
+        const navbarHeight = navbar ? navbar.offsetHeight : 80; // fallback to 80px
+        const elementPosition = element.offsetTop - navbarHeight - 20; // Add 20px buffer
+        
+        window.scrollTo({
+          top: elementPosition,
+          behavior: 'smooth'
+        });
       }
     }, 100);
   };
@@ -63,7 +71,15 @@ const PortfolioWebsite = () => {
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      // Calculate offset to account for fixed navigation bar
+      const navbar = document.querySelector('.navigation');
+      const navbarHeight = navbar ? navbar.offsetHeight : 80; // fallback to 80px
+      const elementPosition = element.offsetTop - navbarHeight - 20; // Add 20px buffer
+      
+      window.scrollTo({
+        top: elementPosition,
+        behavior: 'smooth'
+      });
     }
     setIsMenuOpen(false);
   };
