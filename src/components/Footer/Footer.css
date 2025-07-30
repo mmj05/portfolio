@@ -1,7 +1,26 @@
 .footer {
-  padding: 60px 20px;
+  padding: 40px 20px 30px;
   text-align: center;
-  border-top: 1px solid var(--border-color);
+  background: 
+    linear-gradient(135deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.9) 100%),
+    radial-gradient(circle at 20% 80%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(6, 182, 212, 0.08) 0%, transparent 50%);
+  border-top: 2px solid rgba(37, 99, 235, 0.2);
+  box-shadow: 
+    0 -10px 30px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  position: relative;
+  margin-top: var(--space-3xl);
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.5), transparent);
 }
 
 .footer-content {
@@ -10,14 +29,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .footer-built {
-  font-size: 16px;
-  color: var(--text-secondary);
+  font-size: 18px;
+  color: var(--text-primary);
   margin: 0;
-  font-weight: 400;
+  font-weight: 500;
+  opacity: 0.9;
 }
 
 .heart {
@@ -54,35 +76,39 @@
 .footer-social-link {
   color: var(--text-secondary);
   text-decoration: none;
-  transition: var(--transition);
+  transition: var(--transition-smooth);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 8px;
+  padding: 12px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(37, 99, 235, 0.1);
+  border: 1px solid rgba(37, 99, 235, 0.2);
+  backdrop-filter: blur(8px);
 }
 
 .footer-social-link:hover {
   color: var(--primary-color);
-  background: rgba(255, 215, 0, 0.1);
+  background: rgba(37, 99, 235, 0.2);
   border-color: var(--primary-color);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(37, 99, 235, 0.2);
 }
 
 .footer-copyright {
-  font-size: 14px;
+  font-size: 15px;
   color: var(--text-secondary);
   margin: 0;
-  opacity: 0.8;
+  opacity: 0.9;
+  font-weight: 400;
 }
 
 .footer-email {
-  font-size: 14px;
-  color: var(--text-secondary);
+  font-size: 15px;
+  color: var(--text-accent);
   margin: 0;
-  opacity: 0.7;
+  opacity: 0.9;
+  font-weight: 500;
 }
 
 /* Responsive Design */
