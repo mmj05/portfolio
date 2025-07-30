@@ -114,7 +114,7 @@ const ProjectPage = ({ project, navigateToHome, scrolled, isMenuOpen, setIsMenuO
           {project.challenges && (
             <div className="challenges-section">
               <h2 className="section-subtitle">
-                <span className="gradient-text">Challenges</span> & Problem Solving
+                Challenges & <span className="gradient-text">Problem Solving</span>
               </h2>
               <div className="challenge-solution-content">
                 <div className="challenge-part">
