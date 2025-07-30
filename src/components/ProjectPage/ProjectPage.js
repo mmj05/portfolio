@@ -1,19 +1,22 @@
-import React from 'react';
-import { ArrowLeft, ExternalLink, Github, ChevronRight, Smartphone, Monitor, Globe, Mail, Linkedin, CheckCircle } from 'lucide-react';
+import React, { useState } from 'react';
+import { ArrowLeft, ExternalLink, Github, ChevronRight, Mail, Linkedin, CheckCircle, X } from 'lucide-react';
 import Footer from '../Footer/Footer';
 import './ProjectPage.css';
 
 const ProjectPage = ({ project, navigateToHome, scrolled, isMenuOpen, setIsMenuOpen }) => {
-  const getDeviceIcon = (type) => {
-    switch (type) {
-      case 'mobile':
-        return <Smartphone size={24} color="#0f0f23" />;
-      case 'tablet':
-        return <Monitor size={24} color="#0f0f23" />;
-      default:
-        return <Globe size={24} color="#0f0f23" />;
-    }
+  const [selectedScreenshot, setSelectedScreenshot] = useState(null);
+
+  const openScreenshotModal = (screenshot) => {
+    setSelectedScreenshot(screenshot);
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
   };
+
+  const closeScreenshotModal = () => {
+    setSelectedScreenshot(null);
+    document.body.style.overflow = 'unset'; // Restore scrolling
+  };
+
+
 
   return (
     <div className="project-page">
@@ -21,7 +24,7 @@ const ProjectPage = ({ project, navigateToHome, scrolled, isMenuOpen, setIsMenuO
       <nav className={`project-navigation ${scrolled ? 'navbar-scrolled' : ''}`}>
         <div className="project-nav-container">
           <div className="project-logo">
-            Portfolio
+            Muhaimin.
           </div>
           
           <div className="desktop-nav">
@@ -153,7 +156,11 @@ const ProjectPage = ({ project, navigateToHome, scrolled, isMenuOpen, setIsMenuO
           
           <div className="screenshot-grid">
             {project.screenshots.map((screenshot) => (
-              <div key={screenshot.id} className="screenshot-item">
+              <div 
+                key={screenshot.id} 
+                className="screenshot-item"
+                onClick={() => openScreenshotModal(screenshot)}
+              >
                 <div className="screenshot-header">
                   <p className="screenshot-description">
                     {screenshot.description}
@@ -184,6 +191,34 @@ const ProjectPage = ({ project, navigateToHome, scrolled, isMenuOpen, setIsMenuO
           </button>
         </div>
       </div>
+
+      {/* Screenshot Modal */}
+      {selectedScreenshot && (
+        <div 
+          className={`screenshot-modal ${selectedScreenshot ? 'active' : ''}`}
+          onClick={closeScreenshotModal}
+        >
+          <div 
+            className="screenshot-modal-content"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button 
+              className="screenshot-modal-close"
+              onClick={closeScreenshotModal}
+            >
+              <X size={20} />
+            </button>
+            <img 
+              src={selectedScreenshot.image} 
+              alt={selectedScreenshot.description}
+              className="screenshot-modal-image"
+            />
+            <div className="screenshot-modal-title">
+              {selectedScreenshot.description}
+            </div>
+          </div>
+        </div>
+      )}
 
       <Footer />
     </div>
