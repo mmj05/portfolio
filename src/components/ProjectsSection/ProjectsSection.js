@@ -6,7 +6,7 @@ const ProjectsSection = ({ projects, navigateToProject }) => {
   return (
     <section id="projects" className="projects-section">
       <h2 className="section-title">
-        Featured <span className="gradient-text">Projects</span>
+        Featured Projects
       </h2>
       
       <div className="projects-grid">
