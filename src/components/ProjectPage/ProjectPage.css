@@ -1,7 +1,4 @@
 .project-page {
-  min-height: 100vh;
-  background: linear-gradient(135deg, var(--background-primary) 0%, var(--background-secondary) 100%);
-  padding-top: 100px;
   position: relative;
   z-index: 2;
   min-height: 100vh;
@@ -27,8 +24,8 @@
   border-bottom-color: var(--border-secondary);
 }
 
-.project-container {
-  max-width: 1400px;
+.project-nav-container {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--space-xl);
   display: flex;
@@ -111,7 +108,7 @@
   max-width: 700px;
 }
 
-.project-meta {
+.project-actions {
   display: flex;
   gap: var(--space-lg);
   margin-bottom: var(--space-2xl);
@@ -218,7 +215,7 @@
   margin-bottom: 0;
 }
 
-.project-main-content {
+.features-list {
   display: grid;
   grid-template-columns: 1fr;
   margin: var(--space-lg) 0;
@@ -254,7 +251,7 @@
   color: var(--text-accent);
 }
 
-.project-description p {
+.feature-text-compact {
   color: var(--text-secondary);
   line-height: 1.6;
   font-size: 1rem;
@@ -625,9 +622,9 @@
   .project-main-title {
     font-size: clamp(2rem, 6vw, 2.5rem);
   }
-  
-  .project-container {
-    padding: 0 var(--space-md);
+
+  .project-long-description {
+    font-size: 1.1rem;
   }
 
   .features-list {
@@ -641,13 +638,10 @@
   .challenge-solution-content {
     padding: var(--space-lg);
   }
-  
-  .project-title {
-    font-size: 2rem;
-  }
-  
-  .project-subtitle {
-    font-size: 1.125rem;
+
+  .challenge-text,
+  .solution-text {
+    font-size: 1rem;
   }
 
   .subsection-title {
