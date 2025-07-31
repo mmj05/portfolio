@@ -26,7 +26,7 @@
   --border-accent: #2563eb;
   
   /* Glass & Elevation Effects */
-  --glass-bg: rgba(37, 57, 80, 0.228);
+  --glass-bg: rgba(37, 57, 80, 0.305);
   --glass-border: rgba(203, 213, 225, 0.1);
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -69,19 +69,25 @@ html {
   scroll-behavior: smooth;
 }
 
+
 body {
   font-family: var(--font-sans);
-  background: var(--background-primary);
-  background-image: 
-    radial-gradient(circle at 25% 25%, rgba(37, 99, 235, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, rgba(6, 182, 212, 0.08) 0%, transparent 50%),
-    linear-gradient(135deg, var(--background-primary) 0%, var(--background-secondary) 100%);
+  background-color: #000000;
   color: var(--text-primary);
   line-height: 1.6;
   font-feature-settings: "kern" 1, "liga" 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+/* App Container */
+.app-container {
+  min-height: 100vh;
+  background-color: #000000;
+  color: white;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow: hidden;
 }
 
 /* Modern Typography Scale */

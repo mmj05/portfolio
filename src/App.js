@@ -89,13 +89,7 @@ const PortfolioWebsite = () => {
   }
 
   return (
-    <div style={{
-      minHeight: '100vh',
-      background: 'linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%)',
-      color: 'white',
-      fontFamily: '"Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
-      overflow: 'hidden'
-    }}>
+    <div className="app-container">
       {/* Cursor Effects */}
       <div 
         className="cursor-dot"
