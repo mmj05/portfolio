@@ -170,7 +170,7 @@ export const projects = [
       "Docker",
       "REST APIs",
     ],
-    liveUrl: "https://love-to-read.onrender.com/home",
+    liveUrl: "https://love-to-read.onrender.com",
     githubUrls: {
       frontend: "https://github.com/mmj05/library-app-frontend",
       backend: "https://github.com/mmj05/library-app-backend",
