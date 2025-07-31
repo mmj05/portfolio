@@ -6,7 +6,7 @@ const SkillsSection = ({ skills }) => {
   return (
     <section id="skills" className="skills-section">
       <h2 className="section-title">
-        Skills & <span className="gradient-text">Expertise</span>
+         Skills & Expertise
       </h2>
       
       <div className="skills-grid">

@@ -64,7 +64,7 @@ const ProjectCard = ({ project, onClick }) => {
                   onClick={(e) => e.stopPropagation()}
                   title="Frontend Repository"
                 >
-                  <Github size={18} className="project-link-icon" />
+                  <Github size={14} className="project-link-icon" />
                   <span className="repo-label">FE</span>
                 </a>
                 <a 
@@ -75,7 +75,7 @@ const ProjectCard = ({ project, onClick }) => {
                   onClick={(e) => e.stopPropagation()}
                   title="Backend Repository"
                 >
-                  <Github size={18} className="project-link-icon" />
+                  <Github size={14} className="project-link-icon" />
                   <span className="repo-label">BE</span>
                 </a>
               </>
@@ -85,11 +85,11 @@ const ProjectCard = ({ project, onClick }) => {
                 href={project.githubUrl} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="project-link"
+                className="project-link github-frontend"
                 onClick={(e) => e.stopPropagation()}
                 title="GitHub Repository"
               >
-                <Github size={18} className="project-link-icon" />
+                <Github size={14} className="project-link-icon" />
               </a>
             )}
           </div>

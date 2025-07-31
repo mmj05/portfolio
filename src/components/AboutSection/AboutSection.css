@@ -1,6 +1,6 @@
 .about-section {
-  padding: 100px 20px;
-  max-width: 800px;
+  padding: var(--space-3xl) var(--space-xl);
+  max-width: 900px;
   margin: 0 auto;
   text-align: center;
 }
@@ -8,65 +8,68 @@
 .about-content {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: var(--space-2xl);
 }
 
 .about-text {
-  padding: 40px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  padding: var(--space-2xl);
   text-align: left;
   max-width: 100%;
+  transition: var(--transition-smooth);
   animation: fadeInUp 0.8s ease-out;
 }
 
+.about-text:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-xl);
+  border-color: rgba(37, 99, 235, 0.3);
+}
+
 .about-greeting {
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   line-height: 1.8;
-  margin-bottom: 30px;
+  margin-bottom: var(--space-xl);
   color: var(--text-primary);
-  opacity: 0.9;
+  opacity: 0.95;
+  font-weight: 400;
 }
 
 .about-description {
-  font-size: 1.2rem;
+  font-size: 1.125rem;
   line-height: 1.8;
   color: var(--text-primary);
-  opacity: 0.9;
+  opacity: 0.95;
+  font-weight: 400;
 }
 
 .highlight-name {
+  color: var(--text-accent);
+  font-weight: 700;
+  transition: var(--transition-fast);
+}
+
+.highlight-name:hover {
   color: var(--primary-color);
-  font-weight: 600;
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
-/* Animation */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive Design */
+/* Professional Responsive Design */
 @media (max-width: 768px) {
   .about-section {
-    padding: 80px 20px;
+    padding: var(--space-2xl) var(--space-lg);
   }
   
   .about-text {
-    padding: 30px 25px;
+    padding: var(--space-xl);
   }
   
   .about-greeting {
-    font-size: 1.1rem;
-    margin-bottom: 25px;
+    font-size: 1rem;
+    margin-bottom: var(--space-lg);
   }
   
   .about-description {
@@ -74,17 +77,17 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
   .about-section {
-    padding: 60px 20px;
+    padding: var(--space-2xl) var(--space-md);
   }
   
   .about-text {
-    padding: 25px 20px;
+    padding: var(--space-lg);
   }
   
   .about-greeting {
-    font-size: 1rem;
+    font-size: 0.95rem;
     line-height: 1.6;
   }
   
