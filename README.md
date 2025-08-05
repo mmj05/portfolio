@@ -1,70 +1,72 @@
-# Getting Started with Create React App
+# Muhaimin's Developer Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Live Portfolio ➡️ https://muhaimin-jobayer.onrender.com/](https://muhaimin-jobayer.onrender.com/)
 
-## Available Scripts
+Welcome to my personal portfolio! This site showcases my work as a full-stack software engineer, featuring a collection of projects built with modern technologies like React, TypeScript, Spring Boot, PostgreSQL, and more. Explore live demos, browse project details, and learn about my skills and experience.
 
-In the project directory, you can run:
+## 🌟 Features
 
-### `npm start`
+- **Project Gallery:** Interactive cards for each project, with screenshots, live demos, and source code links.
+- **About Me:** Introduction and background as a software engineer.
+- **Skills Section:** Visual display of technical proficiencies.
+- **Responsive Design:** Optimized for desktop and mobile devices.
+- **Contact Section:** Easy way to get in touch.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🛠️ Highlighted Projects
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### FlipDot Ecommerce Platform
+A production-ready, multi-role ecommerce platform with secure authentication, shopping cart, and dashboards for customers, sellers, and admins.
+- **Stack:** React, Redux Toolkit, Spring Boot, PostgreSQL, Docker, AWS Aurora
+- [Live Demo](https://flipdot.onrender.com/) | [Frontend Code](https://github.com/mmj05/ecommerce-frontend) | [Backend Code](https://github.com/mmj05/ecommerce-backend)
 
-### `npm test`
+### Library Management System
+Comprehensive library management with JWT auth, book lifecycle, Stripe payments, and admin tools.
+- **Stack:** React, TypeScript, Spring Boot, PostgreSQL, Stripe API, Docker
+- [Live Demo](https://love-to-read.onrender.com) | [Frontend Code](https://github.com/mmj05/library-app-frontend) | [Backend Code](https://github.com/mmj05/library-app-backend)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Jamming
+A React app to search for songs and create Spotify playlists.
+- **Stack:** React, JavaScript, Spotify API
+- [Live Demo](https://jamming-mamming.netlify.app/) | [Source Code](https://github.com/mmj05/jamming)
 
-### `npm run build`
+### Recipe Search App
+Recipe discovery app using multiple food APIs for diverse results.
+- **Stack:** jQuery, JavaScript, REST APIs
+- [Live Demo](https://mmj05.github.io/recipe-search-app/) | [Source Code](https://github.com/mmj05/recipe-search-app)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/portfolio.git
+   cd portfolio
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-### `npm run eject`
+3. **Run the development server:**
+   ```bash
+   npm start
+   ```
+   The app will be available at [http://localhost:3000](http://localhost:3000).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📁 Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `src/components/` – React components for each section (About, Projects, Skills, etc.)
+- `src/data/` – Data for projects and skills
+- `src/assets/` – Images and screenshots
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🙋‍♂️ About Me
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Greetings! I am **Muhaimin**, a full-stack software engineer passionate about building seamless user interfaces and robust backend systems. My expertise spans React, TypeScript, Java, Spring Boot, and PostgreSQL, with hands-on experience from personal projects and bootcamp training.
 
-## Learn More
+## 📫 Contact
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Feel free to reach out via the contact form on the site or connect with me on [LinkedIn](https://www.linkedin.com/in/your-linkedin/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for visiting my portfolio!
